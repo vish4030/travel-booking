@@ -11,7 +11,7 @@
       integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> 
+    />
   </head>
   <body>
     <div class="header">
@@ -22,7 +22,7 @@
               <div class="row contact">
                 <div class="col-6">
                   <span class="fa fa-phone"></span>
-                  <a href="tel:+91 7600000000">+91 7600000000</a>
+                  <a href="tel:+917600000000">+91 7600000000</a>
                 </div>
                 <div class="col-6">
                   <span class="fa fa-envelope"></span>
@@ -86,28 +86,38 @@
             <div class="col-7">
               <div class="row">
                 <div class="col-4">
-                  <label for="">Where?</label>
-                  <input type="text" placeholder="Location" />
+                  <label for="loc">Where?</label>
+                  <input type="text" id="loc" placeholder="Location" />
                 </div>
                 <div class="col-4">
-                  <label for="">Check in</label>
-                  <input type="date" name="" id="" placeholder="DD/MM/YYYY" />
+                  <label for="date-s">Check in</label>
+                  <input
+                    type="date"
+                    name=""
+                    id="date-s"
+                    placeholder="DD/MM/YYYY"
+                  />
                 </div>
                 <div class="col-4">
-                  <label for="">Check out</label>
-                  <input type="date" name="" id="" placeholder="DD/MM/YYYY" />
+                  <label for="date-e">Check out</label>
+                  <input
+                    type="date"
+                    name=""
+                    id="date-e"
+                    placeholder="DD/MM/YYYY"
+                  />
                 </div>
               </div>
             </div>
             <div class="col-5">
               <div class="row">
                 <div class="col-3">
-                  <label for="">Adult</label>
-                  <input type="number" name="" id="" placeholder="01" />
+                  <label for="adult">Adult</label>
+                  <input type="number" name="" id="adult" placeholder="01" />
                 </div>
                 <div class="col-3">
-                  <label for="">Child</label>
-                  <input type="number" name="" id="" placeholder="00" />
+                  <label for="child">Child</label>
+                  <input type="number" name="" id="child" placeholder="00" />
                 </div>
                 <div class="col-5">
                   <button class="btn">CLICK HERE</button>
@@ -283,7 +293,7 @@
                 <span class="fa fa-plane"></span>
                 <a href="">Flight</a>
               </li>
-              
+
               <li>
                 <span class="fa fa-car"></span>
                 <a href="">Cab</a>
@@ -310,61 +320,68 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2> Pack and Go <br />
-               <small>Awesome Tours</small>
+            <h2>
+              Pack and Go <br />
+              <small>Awesome Tours</small>
             </h2>
           </div>
           <div class="col-12">
-          <div class="row packages">
-            <div class="col-4 package">
-              <img
-                class="img-res"
-                src="./images/package-img.webp"
-                alt="package-img"
-                width="390"
-                height="251"
-              />
-              <div class="package-content">
-                <p>7 Day + 7 Night</p>
-                <h3>New York + Paris </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p class="price">$800</p>
-                <button class="btn">Book Now</button>
+            <div class="row packages">
+              <div class="col-4 package">
+                <img
+                  class="img-res"
+                  src="./images/package-img.webp"
+                  alt="package-img"
+                  width="390"
+                  height="251"
+                />
+                <div class="package-content">
+                  <p>7 Day + 7 Night</p>
+                  <h3>New York + Paris</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="price">$800</p>
+                  <button class="btn">Book Now</button>
+                </div>
+              </div>
+              <div class="col-4 package">
+                <img
+                  class="img-res"
+                  src="./images/package-img.webp"
+                  alt="package-img"
+                  width="373"
+                  height="251"
+                />
+                <div class="package-content">
+                  <p>7 Day + 7 Night</p>
+                  <h3>New York + Paris</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="price">$800</p>
+                  <button class="btn">Book Now</button>
+                </div>
+              </div>
+              <div class="col-4 package">
+                <img
+                  class="img-res"
+                  src="./images/package-img.webp"
+                  alt="package-img"
+                  width="373"
+                  height="251"
+                />
+                <div class="package-content">
+                  <p>7 Day + 7 Night</p>
+                  <h3>New York + Paris</h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="price">$800</p>
+                  <button class="btn">Book Now</button>
+                </div>
               </div>
             </div>
-            <div class="col-4 package">
-              <img
-                class="img-res"
-                src="./images/package-img.webp"
-                alt="package-img"
-                width="373"
-                height="251"
-              />
-              <div class="package-content">
-                <p>7 Day + 7 Night</p>
-                <h3>New York + Paris </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="price">$800</p>
-                <button class="btn">Book Now</button>
-              </div>
-            </div>
-            <div class="col-4 package">
-              <img
-                class="img-res"
-                src="./images/package-img.webp"
-                alt="package-img"
-                width="373"
-                height="251"
-              />
-              <div class="package-content">
-                <p>7 Day + 7 Night</p>
-                <h3>New York + Paris </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="price">$800</p>
-                <button class="btn">Book Now</button>
-              </div>
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -373,33 +390,61 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2> Pack and Go <br />
-               <small>Awesome Tours</small>
+            <h2>
+              Pack and Go <br />
+              <small>Awesome Tours</small>
             </h2>
           </div>
           <div class="col-12">
             <div class="row">
               <div class="col-4 blog-post">
-                <img class="img-res" src="./images/blog-1.webp" alt="blog-1" width="384" height="258">
+                <img
+                  class="img-res"
+                  src="./images/blog-1.webp"
+                  alt="blog-1"
+                  width="384"
+                  height="258"
+                />
                 <div class="blog-post-content">
                   <h3>Lorem, ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
                   <button class="btn">CLICK HERE</button>
                 </div>
               </div>
               <div class="col-4 blog-post">
-                <img class="img-res" src="./images/blog-2.webp" alt="blog-2" width="384" height="258">
+                <img
+                  class="img-res"
+                  src="./images/blog-2.webp"
+                  alt="blog-2"
+                  width="384"
+                  height="258"
+                />
                 <div class="blog-post-content">
                   <h3>Lorem, ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
                   <button class="btn">CLICK HERE</button>
                 </div>
               </div>
               <div class="col-4 blog-post">
-                <img class="img-res" src="./images/blog-3.webp" alt="blog-3" width="384" height="258">
+                <img
+                  class="img-res"
+                  src="./images/blog-3.webp"
+                  alt="blog-3"
+                  width="384"
+                  height="258"
+                />
                 <div class="blog-post-content">
                   <h3>Lorem, ipsum dolor</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
                   <button class="btn">CLICK HERE</button>
                 </div>
               </div>
@@ -414,22 +459,49 @@
           <div class="col-6"></div>
           <div class="col-6">
             <div class="wrap-9card">
-              <h3>New York + Paris</h2>
-              <small>7 Day + 6 Night</small> 
+              <h2>New York + Paris</h2>
+              <small>7 Day + 6 Night</small>
               <ul class="flex justify-space-bet">
                 <li><span class="fa fa-plane"></span></li>
                 <li><span class="fa fa-bank"></span></li>
                 <li><span class="fa fa-car"></span></li>
               </ul>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Adipisc voluptate nobis quis vero unde soluta?
               </p>
-             <div class="row justify-space-bet">
-              <div class="col-6"> <b>$1000</b> </div>
-              <div class="co-6"><button class="btn">Book Now</button></div>
-             </div>
+              <div class="row justify-space-bet">
+                <div class="col-6"><b>$1000</b></div>
+                <div class="co-6"><button class="btn">Book Now</button></div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="wrap-10">
+      <div class="container">
+        <h2>
+          Customer Reviews <br />
+          <small>We are Travel Agents</small>
+        </h2>
+        <blockquote>
+          <q>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sit,
+            libero sunt quas minus quos quisquam officia, deserunt veritatis a,
+            asperiores odio quam veniam blanditiis tempora velit explicabo id
+            eaque excepturi et. Ratione, sit quos?
+          </q>
+        </blockquote>
+        
+        <span class="fa fa-star"></span><span class="fa fa-star"></span>
+        <span class="fa fa-star"></span><span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <div class="row reviewer">
+          <div class="col-6 review-img">
+            <img src="./images/review-1.jpg" alt="John Smith" width="69" height="69">
+          </div>
+          <div class="col-6 img-name"><h3>John Smith <br> <small>Solo Traveller</small></h3></div>
         </div>
       </div>
     </section>
