@@ -18,50 +18,57 @@
       <header>
         <div class="container">
           <div class="row header-top">
-            <div class="col-6">
+            <div class="col-6 col-t-7 col-mp-2">
               <div class="row contact">
                 <div class="col-6">
                   <span class="fa fa-phone"></span>
-                  <a href="tel:+917600000000">+91 7600000000</a>
+                  <a href="tel:+917600000000"><span class="mp-d-none">+91 7600000000</span></a>
                 </div>
                 <div class="col-6">
                   <span class="fa fa-envelope"></span>
                   <a href="mailto:vishwajeet@travel.com"
-                    >vishwajeet@travel.com</a
+                    ><span class="mp-d-none">+91 7600000000</span></a
                   >
                 </div>
               </div>
             </div>
-            <div class="col-2"></div>
-            <div class="col-4">
+            <div class="col-2 t-d-none col-mp-1"></div>
+            <div class="col-4 col-t-5 col-mp-9">
               <div class="row">
-                <div class="col-6 social-link">
+                <div class="col-6  col-mp-8 social-link">
                   <a href=""><span class="fa fa-facebook"></span></a>
                   <a href=""><span class="fa fa-google-plus"></span></a>
                   <a href=""><span class="fa fa-wikipedia-w"></span></a>
                   <a href=""><span class="fa fa-youtube"></span></a>
                 </div>
-                <div class="col-6 signin-signup">
-                  <a><span class="fa fa-user"></span> Login</a>
-                  <a><span class="fa fa-key"></span> Sign Up</a>
+                <div class="col-6 signin-signup col-mp-4">
+                  <a><span class="fa fa-user"></span> <span class="mp-d-none">Login</span></a>
+                  <a><span class="fa fa-key"></span> <span class="mp-d-none">Sign Up</span></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="row header-bottom">
-            <div class="col-5">
+            <div class="col-5 col-t-10">
               <h1>Exploore</h1>
               <p>CREATIVE TAGLINE HERE</p>
             </div>
-            <div class="col-7">
-              <ul class="flex align-center">
-                <li><a href="">HOME</a></li>
-                <li><a href="">DESTINATION</a></li>
-                <li><a href="">DISCOUNT</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
-              </ul>
+            <div class="col-7 col-t-2">
+              <label for="menu" class="btn ">
+                <span></span><span></span><span></span>
+              </label>
+              <input type="checkbox" id="menu" />
+              <div class="collapse">
+                <ul class="flex align-center">
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">DESTINATION</a></li>
+                  <li><a href="">DISCOUNT</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">BLOG</a></li>
+                  <li><a href="">CONTACT</a></li>
+                </ul>
+              </div>
+             
             </div>
           </div>
         </div>
@@ -83,14 +90,14 @@
         <h2>FINDS HOTELS</h2>
         <form action="/">
           <div class="row">
-            <div class="col-7">
-              <div class="row">
+            <div class="col-7 col-mp-12">
+              <div class="row find-hotel">
                 <div class="col-4">
                   <label for="loc">Where?</label>
                   <input type="text" id="loc" placeholder="Location" />
                 </div>
                 <div class="col-4">
-                  <label for="date-s">Check in</label>
+                  <label for="date-s">Check-in</label>
                   <input
                     type="date"
                     name=""
@@ -99,7 +106,7 @@
                   />
                 </div>
                 <div class="col-4">
-                  <label for="date-e">Check out</label>
+                  <label for="date-e">Check-out</label>
                   <input
                     type="date"
                     name=""
@@ -109,17 +116,17 @@
                 </div>
               </div>
             </div>
-            <div class="col-5">
+            <div class="col-5 col-mp-12">
               <div class="row">
-                <div class="col-3">
+                <div class="col-4">
                   <label for="adult">Adult</label>
                   <input type="number" name="" id="adult" placeholder="01" />
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                   <label for="child">Child</label>
                   <input type="number" name="" id="child" placeholder="00" />
                 </div>
-                <div class="col-5">
+                <div class="col-4">
                   <button class="btn">CLICK HERE</button>
                 </div>
               </div>
@@ -167,50 +174,121 @@
               <small>We are Travel Agents</small>
             </h2>
           </div>
-          <div class="col-6">
-            <div class="flex icon-p">
-              <span class="fa fa-plane"></span>
-              <p>
-                <b>Lorem ipsum dolor, sit amet lorem</b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                consectetur adipisicing elit.
-              </p>
-              <span class="fa fa-bank"></span>
-              <p>
-                <b>Lorem ipsum dolor, sit amet lorem</b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                consectetur adipisicing elit.
-              </p>
-              <span class="fa fa-cutlery"></span>
-              <p>
-                <b>Lorem ipsum dolor, sit amet lorem</b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                consectetur adipisicing elit.
-              </p>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-plane"></span></li>
+                  <li><h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li> 
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-train"></span></li>
+                  <li><h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li> 
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-bank"></span></li>
+                  <li><h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li> 
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-bicycle"></span></li>
+                  <li><h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li> 
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-cutlery"></span></li>
+                  <li><h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li> 
+                </ul>
+              </div>
+              <div class="col-6 col-mp-12">
+                <ul class="flex">
+                  <li><span class="fa fa-eye"></span></li>
+                  <li><h3>Lorem ipsum dolor, sit amet lorem</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    consectetur adipisicing elit.
+                  </li> 
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-6">
+          <!-- <div class="col-6 col-mp-12">
             <div class="flex icon-p">
-              <span class="fa fa-train"></span>
-              <p>
-                <b>Lorem ipsum dolor, sit amet lorem</b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                consectetur adipisicing elit.
-              </p>
-              <span class="fa fa-bicycle"></span>
-              <p>
-                <b>Lorem ipsum dolor, sit amet lorem</b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                consectetur adipisicing elit.
-              </p>
-              <span class="fa fa-eye"></span>
-              <p>
-                <b>Lorem ipsum dolor, sit amet lorem</b>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                consectetur adipisicing elit.
-              </p>
+              <div>
+                <span class="fa fa-plane"></span>
+                <p>
+                  <b>Lorem ipsum dolor, sit amet lorem</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+              
+              <div>
+                <span class="fa fa-plane"></span>
+                <p>
+                  <b>Lorem ipsum dolor, sit amet lorem</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+              <div>
+                <span class="fa fa-plane"></span>
+                <p>
+                  <b>Lorem ipsum dolor, sit amet lorem</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  consectetur adipisicing elit.
+                </p>
+              </div>
             </div>
           </div>
+          <div class="col-6 col-mp-12">
+            <div class="flex icon-p">
+              <div>
+                <span class="fa fa-plane"></span>
+                <p>
+                  <b>Lorem ipsum dolor, sit amet lorem</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+              <div>
+                <span class="fa fa-plane"></span>
+                <p>
+                  <b>Lorem ipsum dolor, sit amet lorem</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+              <div>
+                <span class="fa fa-plane"></span>
+                <p>
+                  <b>Lorem ipsum dolor, sit amet lorem</b>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -223,7 +301,7 @@
               <small>We are Travel Agents</small>
             </h2>
           </div>
-          <div class="col-4 box">
+          <div class="col-4 col-mp-12 box">
             <span class="fa fa-car"></span>
             <h3>Low Budget Trip</h3>
             <p>$800</p>
@@ -238,7 +316,7 @@
               <p>adipisicing elit.</p>
             </div>
           </div>
-          <div class="col-4 box">
+          <div class="col-4 col-mp-12  box mp-d-none">
             <span class="fa fa-train"></span>
             <h3>Low Budget Trip</h3>
             <p>$800</p>
@@ -253,7 +331,7 @@
               <p>adipisicing elit.</p>
             </div>
           </div>
-          <div class="col-4 box">
+          <div class="col-4 col-mp-12 box mp-d-none">
             <span class="fa fa-plane"></span>
             <h3>Low Budget Trip</h3>
             <p>$1000</p>
@@ -274,7 +352,7 @@
     <section class="wrap-6">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 col-t-12">
             <img
               class="img-res"
               src="./images/wrap-6.webp"
@@ -283,7 +361,7 @@
               height="546"
             />
           </div>
-          <div class="col-8 wrap6-content">
+          <div class="col-8 col-t-12 wrap6-content">
             <h2>
               Trusted Since 2001 <br />
               <small>We are Travel Agents</small>
@@ -327,7 +405,7 @@
           </div>
           <div class="col-12">
             <div class="row packages">
-              <div class="col-4 package">
+              <div class="col-4 col-mp-12 package">
                 <img
                   class="img-res"
                   src="./images/package-img.webp"
@@ -345,7 +423,7 @@
                   <button class="btn">Book Now</button>
                 </div>
               </div>
-              <div class="col-4 package">
+              <div class="col-4 col-mp-12 mp-d-none package">
                 <img
                   class="img-res"
                   src="./images/package-img.webp"
@@ -363,7 +441,7 @@
                   <button class="btn">Book Now</button>
                 </div>
               </div>
-              <div class="col-4 package">
+              <div class="col-4 col-mp-12 mp-d-none package">
                 <img
                   class="img-res"
                   src="./images/package-img.webp"
@@ -391,13 +469,13 @@
         <div class="row">
           <div class="col-12">
             <h2>
-              Pack and Go <br />
+              Trusted Since 2001 <br />
               <small>Awesome Tours</small>
             </h2>
           </div>
           <div class="col-12">
             <div class="row">
-              <div class="col-4 blog-post">
+              <div class="col-4 col-mp-12 blog-post">
                 <img
                   class="img-res"
                   src="./images/blog-1.webp"
@@ -414,7 +492,7 @@
                   <button class="btn">CLICK HERE</button>
                 </div>
               </div>
-              <div class="col-4 blog-post">
+              <div class="col-4 col-mp-12 mp-d-none blog-post">
                 <img
                   class="img-res"
                   src="./images/blog-2.webp"
@@ -431,7 +509,7 @@
                   <button class="btn">CLICK HERE</button>
                 </div>
               </div>
-              <div class="col-4 blog-post">
+              <div class="col-4 col-mp-12 mp-d-none blog-post">
                 <img
                   class="img-res"
                   src="./images/blog-3.webp"
@@ -456,8 +534,8 @@
     <section class="wrap-9">
       <div class="container">
         <div class="row">
-          <div class="col-6"></div>
-          <div class="col-6">
+          <div class="col-6 col-t-4"></div>
+          <div class="col-6 col-mp-12">
             <div class="wrap-9card">
               <h2>New York + Paris</h2>
               <small>7 Day + 6 Night</small>
@@ -487,23 +565,71 @@
         </h2>
         <blockquote>
           <q>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sit,
-            libero sunt quas minus quos quisquam officia, deserunt veritatis a,
-            asperiores odio quam veniam blanditiis tempora velit explicabo id
-            eaque excepturi et. Ratione, sit quos?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            sit, libero sunt quas minus quos quisquam officia, deserunt
+            veritatis a, asperiores odio quam veniam blanditiis tempora velit
+            explicabo id eaque excepturi et. Ratione, sit quos?
           </q>
         </blockquote>
-        
+
         <span class="fa fa-star"></span><span class="fa fa-star"></span>
         <span class="fa fa-star"></span><span class="fa fa-star"></span>
         <span class="fa fa-star"></span>
         <div class="row reviewer">
           <div class="col-6 review-img">
-            <img src="./images/review-1.jpg" alt="John Smith" width="69" height="69">
+            <img
+              src="./images/review-1.jpg"
+              alt="John Smith"
+              width="69"
+              height="69"
+            />
           </div>
-          <div class="col-6 img-name"><h3>John Smith <br> <small>Solo Traveller</small></h3></div>
+          <div class="col-6 img-name">
+            <h3>
+              John Smith <br />
+              <small>Solo Traveller</small>
+            </h3>
+          </div>
         </div>
       </div>
     </section>
+    <footer class="wrap-11">
+      <div class="top">
+        <div class="top-header">
+          <h2>Start Your Journey</h2>
+          <p><a href="">Contact us</a></p>
+          <span class="fa fa-map-marker"></span>
+        </div>
+        <div class="container middle">
+          <div class="row middle-top">
+            <div class="col-4 col-mp-12 flex ">
+              <div class="middle-icon"><span class="fa fa-envelope"></span></div>
+              <div class="middle-content"><h3>EMAIL</h3><a href="">mymail@gmail.com</a></div>
+            </div>
+            <div class="col-4 col-mp-12 flex ">
+              <div class="middle-icon"><span class="fa fa-mobile"></span></div>
+              <div class="middle-content"><h3>CALL US!</h3><a href="">mymail@gmail.com</a></div>
+            </div>
+            <div class="col-4 col-mp-12 flex ">
+              <div class="middle-icon"><span class="fa fa-map-marker"></span></div>
+              <div class="middle-content"><h3>ADDRESS</h3><a href="">mymail@gmail.com</a></div>
+            </div>
+          </div>
+          <ul class="flex justify-space-bet">
+            <li><span class="fa fa-facebook"></span></li>
+            <li><span class="fa fa-google-plus"></span></li>
+            <li><span class="fa fa-wikipedia-w"></span></li>
+            <li><span class="fa fa-youtube"></span></li>
+            <li><span class="fa fa-linkedin"></span></li>
+            <li><span class="fa fa-digg"></span></li>
+            <li><span class="fa fa-instagram"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Designed by: vishwajeet kumar</p>
+        <p>&copy; Copyright 2024, All Right Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
