@@ -125,13 +125,12 @@ small{font-weight: 400; font-size: 37px;}
 .wrap-5{padding-top: 100px;background: url(../images/package.webp), no-repeat center/cover,linear-gradient(#000,#000);
     max-width: 1425px; min-height:761px; ;}
 .wrap-5 h2{text-align: center; padding-bottom: 70px;}
-.wrap-5 .box{ background: #fff; text-align: center; flex: 0 0 30%; border-radius: 10px; padding: 30px 0;}
+.wrap-5 .box{ background: #fff; text-align: center; flex: 1 0 90%; border-radius: 10px; padding: 30px 0;}
 .box span.fa{font-size: 57px; color: #373737; line-height: 100px;}
 .box h3{font: 900 24px var(--ff);line-height: 50px;}
 .box > p{background: var(--yellow); line-height: 65px; font-size: 30px; margin:30px 0 50px 0;}
 .wrap-5 ul.flex{text-align: left; line-height: 50px; font: 400 17px var(--ffl); gap: 20px; padding-left:2rem;}
-
- .box ul.flex span.fa{font-size: 20px; color: var(--sky-blue); line-height: 25px;}
+.wrap-5 .box ul.flex span.fa{font-size: 20px; color: var(--sky-blue); line-height: 25px;}
 
  .wrap-6{padding: 90px 0;}
  .wrap6-content ul{margin: 50px 0; border: 2px solid var(--sky-blue); text-align:right ;}
