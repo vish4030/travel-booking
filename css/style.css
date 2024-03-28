@@ -125,10 +125,10 @@ small{font-weight: 400; font-size: 37px;}
 .wrap-5{padding-top: 100px;background: url(../images/package.webp), no-repeat center/cover,linear-gradient(#000,#000);
     max-width: 1425px; min-height:761px; ;}
 .wrap-5 h2{text-align: center; padding-bottom: 70px;}
-.wrap-5 .box{ background: #fff; text-align: center; flex: 1 0 90%; border-radius: 10px; padding: 30px 0;}
+.wrap-5 .box{ background: #fff; text-align: center; flex: 1 0 30%; border-radius: 10px; padding: 30px 0; margin: 0 10px;}
 .box span.fa{font-size: 57px; color: #373737; line-height: 100px;}
 .box h3{font: 900 24px var(--ff);line-height: 50px;}
-.box > p{background: var(--yellow); line-height: 65px; font-size: 30px; margin:30px 0 50px 0;}
+.box > p{background: var(--yellow); line-height: 65px; font-size: 30px; margin:30px -8px 50px -8px; border-radius: 2px;}
 .wrap-5 ul.flex{text-align: left; line-height: 50px; font: 400 17px var(--ffl); gap: 20px; padding-left:2rem;}
 .wrap-5 .box ul.flex span.fa{font-size: 20px; color: var(--sky-blue); line-height: 25px;}
 
@@ -156,18 +156,31 @@ small{font-weight: 400; font-size: 37px;}
 
  
 
- .wrap-7{padding: 80px 0;background: url(../images/wrap-7bg.jpg), no-repeat center/cover,linear-gradient(#000,#000);
+ .wrap-7{padding: 80px 0 300px 0;background: url(../images/wrap-7bg.jpg), no-repeat center/cover,linear-gradient(#000,#000);
     max-width: 1600px; text-align: center;}
- .wrap-7 h2{margin-bottom: 90px;}   
+ .wrap-7 h2{margin-bottom: 80px;}   
  .wrap-7 .packages{padding: 0 30px;}
- .packages .package{border-radius: 10px; padding:2px;  }
+ .packages .package{border-radius: 10px; padding:2px; position: relative; max-width: 380px;  }
+ .packages .package:nth-child(2)::after{
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-size: 380px;
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:-220px;
+    color: #fff;
+    z-index: 10;
+    overflow: hidden;
+}
  .package img{border-radius: 10px 10px 0 0;}
  .package-content{background: #fff;border-radius: 0 0 10px 10px;}
- .package-content p{padding-top: 25px; }
+ .package-content p{padding-top: 14px; }
  .package-content p:first-child{padding:17px 0 10px 0;}
- .package-content p.price{padding: 22px 0; font:900 30px var(--ff);}
- .package-content h3{ padding: 0; font: 900 28px var(--ff);}
- .package-content button{margin-bottom: 10px;}
+ .package-content p.price{padding: 15px 0; font:900 30px var(--ff);}
+ .package-content h3{ padding: 0; font: 900 22px var(--ff);}
+ .package-content button{margin-bottom: 50px;}
 
 
  .wrap-8{padding: 100px 0 80px 0; background: url(../images/wrap-8bg.jpg), no-repeat center/cover,linear-gradient(#000,#000);
@@ -224,6 +237,7 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
     .wrap-3 .content{flex: 1 0 50%; background: #fafafa; padding: 30px 60px 0px 60px;}
 }
 
+/* tablet */
 @media screen and (max-width:980px){
     .col-t-1{ flex-basis: 8.33%; max-width: 8.33%;}
     .col-t-2{ flex-basis: 16.66%; max-width: 16.66%;}
@@ -257,7 +271,7 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
     .wrap-9card{ margin-top: 150px;}
 
 }
-
+/* mobile landscape */
 @media screen and (max-width:767px){
     html{ font-size: 12px;}
 
@@ -278,7 +292,7 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
 
 
 }
-
+/* Mobile Portrait */
 @media screen and (max-width:460px){
 
     .col-mp-1{ flex-basis: 8.33%; max-width: 8.33%;}
@@ -311,7 +325,7 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
      small{font-size: 2rem;}
     .wrap-4 small{font-size: 2rem;}
 
-    .wrap-5 .box{flex-basis: auto;}
+    .wrap-5 .box{max-width: 75%; margin-left: 14%; padding:0 0 10px 0;}
 
     .wrap6-content ul{flex-flow: column wrap; border: none; text-align: center;}
     .wrap-6 li a::after{display: none;}
@@ -320,6 +334,10 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
     .wrap-4 h2{font-size: 2.6rem; }
 
     .blog-post-content button{top: 53%;}
+
+
+    .wrap-7 .packages .package{max-width: 514px;}
+    .wrap-7 .packages .package:nth-child(2)::after{font-size: 514px; bottom: -305Px;}
 
     .wrap-9 h2{font-size: 2rem; }
     .wrap-9card h3{font-size: 2rem;}
