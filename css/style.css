@@ -112,7 +112,7 @@ small{font-weight: 400; font-size: 37px;}
 .icon-p p{flex-basis: 70%;} */
 
 
-.wrap-4{padding: 75px 0;}
+.wrap-4{padding: 75px 0px;}
 .wrap-4 h2{ text-align: center;}
 .wrap-4-head{ margin-bottom: 70px;}
 .wrap-4 li{margin-bottom: 2rem;}
@@ -144,9 +144,9 @@ small{font-weight: 400; font-size: 37px;}
     font-weight: 900;
     position: absolute;
     left: 97%;
-    top: -7.5px;
-    color: var(--sky-blue);
-    z-index: 10;}
+    top: -7.5px;z-index: 2;
+
+    color: var(--sky-blue);}
  .wrap6-content p{margin-bottom: 60px;}
  .wrap-6 li:first-child{background: var(--sky-blue); color: #fff;}
  .wrap-6 li:nth-last-child(2) a::after{color: #ddd;}
@@ -191,7 +191,7 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
 .wrap-9card b{font: 900 50px var(--ff);}
 
 .wrap-10{background: url(../images/wrap-10bg.jpg), no-repeat center/cover,linear-gradient(#000,#000);
-    max-width: 1600px; height: 592px; color: #fff; text-align: center; padding: 100px 0;}
+    max-width: 1600px; height: 592px; color: #fff; text-align: center; padding: 100px 0; position: relative;}
 .wrap-10 blockquote q{ display:block; padding:70px 120px 40px 120px; font: 400 italic 17.88px var(--ffl);}  
 .wrap-10 span.fa{font-size: 22px; margin-right: 10px;}
 .wrap-10 .reviewer{padding: 60px 0; }
@@ -200,6 +200,8 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
 .wrap-10 .img-name{text-align: left; line-height: 69px;}
 .reviewer .img-name h3{ font: 900 24px var(--ff);}
 .reviewer .img-name small{ font: 400 15px var(--ff);}
+.wrap-10 #preBtn{position: absolute; top: 50%; left: 0;}
+.wrap-10 #nextBtn{position: absolute; top: 50%; right: 0;}
 
 .wrap-11 .top .top-header{background: url(../images/footer-header.jpg), no-repeat center/cover,linear-gradient(#000,#000);
     max-width: 1600px; height: 465px; color: #fff; text-align: center;}
@@ -249,13 +251,15 @@ box-shadow: -1px -1px 1px #ddd,1px 1px 1px #ddd;}
     .header-bottom #menu:checked + .collapse{opacity: 1; visibility:visible;}
 
     .wrap-3 .img{display:inline-block; flex: 0 0 100%;}
-    .wrap-3 .content{flex: 1 0 100; margin: auto;}
+    .wrap-3 .content{flex: 1 0 100px; margin: auto;}
 
     .wrap-6 .wrap6-content .btn{margin-left: 40%;}
 
     .blog-post-content button{top: 38%; padding:10px; font-size: 14px;}
 
     .wrap-9card{ margin-top: 150px;}
+
+    .wrap-10{padding: 50px 0;}
 
 }
 /* mobile landscape */

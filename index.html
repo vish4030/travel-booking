@@ -78,7 +78,7 @@
                 <ul class="flex align-center">
                   <li><a href="#header">HOME</a></li>
                   <li><a href="#destination">DESTINATION</a></li>
-                  <li><a href="#didcount">DISCOUNT</a></li>
+                  <li><a href="#discount">DISCOUNT</a></li>
                   <li><a href="#about">ABOUT</a></li>
                   <li><a href="#blog">BLOG</a></li>
                   <li><a href="#contact">CONTACT</a></li>
@@ -88,7 +88,7 @@
           </div>
         </div>
     </header>
-    <section class="banner" role="banner">
+    <section class="banner" role="banner" id="header">
         <div class="banner-content">
           <h2>Start Your Greatest </h2>
           <small>ADVENTURE WITH US!</small>
@@ -103,21 +103,21 @@
     <section class="wrap-2">
       <div class="container">
         <h2>FINDS HOTELS</h2>
-        <form action="/">
+        <form action="./hotels.html" method="post" target="_blank">
           <div class="row">
             <div class="col-7 col-mh-12">
               <div class="row find-hotel">
                 <div class="col-4">
                   <label for="loc">Where?</label>
-                  <input type="text" id="loc" placeholder="Location" />
+                  <input type="text" name="loc" placeholder="Location" />
                 </div>
                 <div class="col-4">
-                  <label for="date-s">Check-in</label>
-                  <input type="date" id="date-s" />
+                  <label for="date_s">Check-in</label>
+                  <input type="date" name="date_s" />
                 </div>
                 <div class="col-4">
-                  <label for="date-e">Check-out</label>
-                  <input type="date" id="date-e" />
+                  <label for="date_e">Check-out</label>
+                  <input type="date" name="date_e" />
                 </div>
               </div>
             </div>
@@ -132,7 +132,7 @@
                   <input type="number" name="child" id="child" placeholder="00" />
                 </div>
                 <div class="col-4">
-                  <button class="btn">CLICK HERE</button>
+                  <button type="submit" class="btn" >CLICK HERE</button>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@
         </form>
       </div>
     </section>
-    <section class="wrap-3">
+    <section id="about" class="wrap-3">
       <div class="flex">
         <div class="img">
           <img
@@ -318,7 +318,7 @@
         </div>
       </div>
     </section>
-    <section class="wrap-6">
+    <section id="blog"  class="wrap-6">
       <div class="container">
         <div class="row">
           <div class="col-4 col-t-12">
@@ -362,7 +362,7 @@
         </div>
       </div>
     </section>
-    <section class="wrap-7">
+    <section  id="discount" class="wrap-7">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -432,7 +432,7 @@
         </div>
       </div>
     </section>
-    <section class="wrap-8">
+    <section id="destination" class="wrap-8">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -525,12 +525,69 @@
         </div>
       </div>
     </section>
-    <section class="wrap-10">
+    <section  class="wrap-10">
       <div class="container">
         <h2>
           Customer Reviews <br />
           <small>We are Travel Agents</small>
         </h2>
+        <div class="reviews">
+          <div class="review_item">
+            <blockquote>
+              <q>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                sit, libero sunt quas minus quos quisquam officia, deserunt
+                veritatis a, asperiores odio 
+              </q>
+            </blockquote>
+            <span class="fa fa-star"></span><span class="fa fa-star"></span>
+            <span class="fa fa-star"></span><span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <div class="row reviewer">
+              <div class="col-6 review-img">
+                <img
+                  src="./images/review-1.jpg"
+                  alt="John Smith"
+                  width="69"
+                  height="69"
+                />
+              </div>
+              <div class="col-6 img-name">
+                <h3>
+                  John Smith <br />
+                  <small>Solo Traveller</small>
+                </h3>
+              </div>
+            </div>
+         </div>
+         <div class="review_item">
+          <blockquote>
+            <q>
+             Impedi  sit, libero sunt quas minus quos quisquam officia, deserunt
+              veritatis a, asperiores odio quam veniam blanditiis tempora velit
+              explicabo id eaque excepturi et. Ratione, sit quos?
+            </q>
+          </blockquote>
+          <span class="fa fa-star"></span><span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <div class="row reviewer">
+            <div class="col-6 review-img">
+              <img
+                src="./images/review-2.jpg"
+                alt="John Smith"
+                width="69"
+                height="69"
+              />
+            </div>
+            <div class="col-6 img-name">
+              <h3>
+                John Smith-1 <br />
+                <small>Solo Traveller</small>
+              </h3>
+            </div>
+          </div>
+         </div>
+         <div class="review_item">
         <blockquote>
           <q>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
@@ -539,14 +596,13 @@
             explicabo id eaque excepturi et. Ratione, sit quos?
           </q>
         </blockquote>
-
         <span class="fa fa-star"></span><span class="fa fa-star"></span>
-        <span class="fa fa-star"></span><span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
         <span class="fa fa-star"></span>
         <div class="row reviewer">
           <div class="col-6 review-img">
             <img
-              src="./images/review-1.jpg"
+              src="./images/review-3.jpg"
               alt="John Smith"
               width="69"
               height="69"
@@ -554,14 +610,75 @@
           </div>
           <div class="col-6 img-name">
             <h3>
-              John Smith <br />
+              John Smith-2 <br />
               <small>Solo Traveller</small>
             </h3>
           </div>
         </div>
+         </div>
+         <div class="review_item">
+      <blockquote>
+        <q>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          sit, libero sunt quas minus quos quisquam officia, deserunt
+          veritatis a, asperiores odio quam veniam blanditiis tempora velit
+          explicabo id eaque excepturi et. 
+        </q>
+      </blockquote>
+      <span class="fa fa-star"></span><span class="fa fa-star"></span>
+      <span class="fa fa-star"></span><span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <div class="row reviewer">
+        <div class="col-6 review-img">
+          <img
+            src="./images/review-4.jpg"
+            alt="John Smith"
+            width="69"
+            height="69"
+          />
+        </div>
+        <div class="col-6 img-name">
+          <h3>
+            John Smith-3 <br />
+            <small>Solo Traveller</small>
+          </h3>
+        </div>
+      </div>
+         </div>
+         <div class="review_item">
+    <blockquote>
+      <q>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+        sit, libero sunt quas minus quos quisquam officia, deserunt
+        veritatis a, asperiores odio quam veniam blanditiis tempora velit
+        explicabo id eaque excepturi et. Ratione, sit quos?
+      </q>
+    </blockquote>
+    <span class="fa fa-star"></span><span class="fa fa-star"></span>
+    <span class="fa fa-star"></span><span class="fa fa-star"></span>
+    <div class="row reviewer">
+      <div class="col-6 review-img">
+        <img
+          src="./images/review-5.jpg"
+          alt="John Smith"
+          width="69"
+          height="69"
+        />
+      </div>
+      <div class="col-6 img-name">
+        <h3>
+          John Smith-4 <br />
+          <small>Solo Traveller</small>
+        </h3>
+      </div>
+    </div>
+         </div>
+        </div> 
+        <button id="preBtn" onclick="prevReview()"><span class="fa fa-arrow-left"></span></button>
+        <button id="nextBtn" onclick="nextReview()"><span class="fa fa-arrow-right"></span></button>
       </div>
     </section>
-    <footer class="wrap-11">
+    <footer id="contact" class="wrap-11">
       <div class="top">
         <div class="top-header">
           <h2>Start Your Journey</h2>
@@ -614,5 +731,6 @@
         <p>&copy; Copyright 2024, All Right Reserved</p>
       </div>
     </footer>
+     <script src="./js/main.js" type="text/javascript" defer></script>
   </body>
 </html>
