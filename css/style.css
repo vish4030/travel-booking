@@ -24,7 +24,7 @@ html{
     --sky-blue:#00a4ff;
 }
 
-body{font-size: 16px; font-family:var(--ff);}
+body{font-size: 16px; font-family:var(--ff); position: relative;}
 
 
 /* utility class */
@@ -33,7 +33,7 @@ body{font-size: 16px; font-family:var(--ff);}
     max-width: 1200px;
     margin: auto;
     padding: 0 1rem;
-    position: relative;
+   
 }
 
 .row{display: flex; flex-flow: row wrap; margin: 0 -1rem;}
@@ -94,7 +94,7 @@ label[for="menu"] span{ display: block; height: 8px; width: 5.2rem; background-c
 
 .container-register{ max-width: 100%; position: absolute; top: 150px; left: 0; right: 0; z-index: 12;}
 #register{display: none; }
-form{width: 400px; padding: 1rem; border-radius: 10px; border: 1px solid gray; margin: 1rem auto; background: #fff;}
+#register form{width: 400px; padding: 1rem; border-radius: 10px; border: 1px solid gray; margin: 1rem auto; background: #fff;}
 #register label{display: block; font-size:2rem ;}
 #register form input{width: 90%; display: inline-block; padding: 5px 10px;font-size: 1.5rem; margin-bottom: 1rem; border-radius: 5px; border: 2px solid #5c5858;}
 
