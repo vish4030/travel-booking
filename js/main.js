@@ -25,7 +25,25 @@ const formValidation = (name, value)=>{
             }else{
                 return true;
             }  
-            break;    
+            break; 
+        case 'email':
+            if(value.trim() === ""){
+                return false;
+            }else{
+                const flags = "gm";
+                const pattern = "[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,}"
+                const regexPattern = new RegExp(pattern, flags);
+                const result = value.match(regexPattern);
+                return result;
+            } 
+        case 'password':
+            if(value.trim() === ""){
+                return false;
+            }else{
+                const pattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{6,16}$/;
+                const result = pattern.test(value);
+                return result;
+            }         
     }
 }
 
@@ -56,36 +74,76 @@ function onSubmit(e) {
 
 let rev = 0;
 carousel(rev);
-
-function prevReview(){
-    rev-=1;
-    carousel(rev);
-}
-
-function nextReview(){
-    rev+=1;
-    carousel(rev);
-}
-
-setInterval(()=>{
-    carousel(rev);
-    rev+=1;
-},3000)
+function prevReview(){ rev-=1; carousel(rev); }
+function nextReview(){ rev+=1; carousel(rev); }
+setInterval(()=>{ carousel(rev); rev+=1 },3000)
 
 function carousel(review){
     let reviews = document.getElementsByClassName("review_item");
-    if(review >= reviews.length){
-        review = 0;
-        rev =0;
-    }
+    if(review >= reviews.length){ review = 0;  rev =0; }
+    if(review<0){ review = reviews.length -1; rev = reviews.length - 1 }
 
-    if(review<0){
-        review = reviews.length -1;
-        rev = reviews.length - 1;
-    }
-
-    for(let i=0; i<reviews.length; i++){
-        reviews[i].style.display = "none";
-    }
+    for(let i=0; i<reviews.length; i++){ reviews[i].style.display = "none" }
     reviews[review].style.display = "block"; 
 }
+
+
+ document.getElementById('login-click').addEventListener("click",()=>{
+    let login = document.getElementById('login');
+    let display = login.style.display == "block"?"none":"block"; 
+    login.style.display = display;
+ })
+ document.getElementById('register-click').addEventListener("click",()=>{
+    let register = document.getElementById('register');
+    console.log(register);
+    let display = register.style.display == "block"?"none":"block"; 
+    register.style.display = display;
+ })
+
+ document.getElementById("login-btn").addEventListener("click",(e)=>{
+    e.preventDefault();
+
+   if(!formValidation(email.name,email.value)){
+       alert("Enter Valid Email");
+       email.value = "";
+       document.getElementById("password").value = "";
+       email.focus();
+   }else{
+     email.value = "";
+     document.getElementById("password").value = "";
+     document.getElementById('login').style.display="none";
+   }
+   
+ })
+
+ document.getElementById("res-btn").addEventListener("click",(e)=>{
+    e.preventDefault();
+   let name = document.getElementById("fname");
+   let email = document.getElementById("email_r");
+   let age = document.getElementById("age");
+   let password = document.getElementById("password_r");
+
+   if(name.value.trim() == ""){
+    alert("Name should not be empty.")
+    return;
+   }else if(age.value<1 || age.value>100){
+    alert("Enter Age between 1 year to 100 Year.")
+    return;
+    }else if(!formValidation("email",email.value)){
+       alert("Enter Valid Email");
+       email.value = "";
+       return;
+   }else if(!formValidation("password", password.value)){
+      alert("Enter Valid Password");
+      return;
+   }else{
+     email.value = "";
+     name.value = "";
+     age.value = "";
+     password.value = "";
+     document.getElementById('register').style.display="none";
+   }
+
+
+   
+ })

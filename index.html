@@ -51,15 +51,13 @@
             </div>
             <div class="col-3 col-t-4 col-mh-2">
               <ul class="flex sign-in-up">
-                <li>
-                  <a href="./login.html"
-                    ><span class="fa fa-user"></span
-                    ><span class="text mh-d-none">Login</span></a>
+                <li id="login-click">
+                    <span class="fa fa-user"></span>
+                    <span class="text mh-d-none">Login</span>
                 </li>
-                <li>
-                  <a href="./signup.html"
-                    ><span class="fa fa-key"></span
-                    ><span class="text mh-d-none">Sign Up</span></a>
+                <li id="register-click">
+                    <span class="fa fa-key"></span>
+                    <span class="text mh-d-none">Sign Up</span>
                 </li>
               </ul>
             </div>
@@ -88,6 +86,50 @@
           </div>
         </div>
     </header>
+    <div class="container-login" id="login">
+      <h1>Login form</h1>
+      <form>
+          <table>
+              <tbody>
+                  <tr>
+                      <td><label for="email">Email:</label></td>
+                      <td><input type="email" id="email" autocomplete="on" name="email"><span></span></td>
+                  </tr>
+                  <tr>
+                      <td><label for="password">Password:</label></td>
+                      <td><input type="password" id="password" autocomplete="off" name="password"><span></span></td>
+                  </tr>
+              </tbody>
+          </table>
+          <button id="login-btn"  class="btn">Login</button>
+        </form>
+      </div>
+    <div class="container-register" id="register">
+        <h1>Registration form</h1>
+        <form >
+          <table>
+              <tbody>
+                <tr>
+                  <td><label for="fname">Name:</label></td>
+                  <td><input type="text" id="fname" autocomplete="on" name="fname"><span></span></td>
+                </tr>
+                <tr>
+                  <td><label for="age">Age:</label></td>
+                  <td><input type="age" id="age" autocomplete="on" name="age"><span></span></td>
+              </tr>
+                <tr>
+                      <td><label for="email_r">Email:</label></td>
+                      <td><input type="email" id="email_r" autocomplete="on" name="email_r"><span></span></td>
+                  </tr>
+                  <tr>
+                      <td><label for="password_r">Password:</label></td>
+                      <td><input type="password" id="password_r" autocomplete="on" name="password_r"><span></span></td>
+                  </tr>
+              </tbody>
+          </table>
+          <button id="res-btn"  class="btn">Register</button>
+        </form>
+    </div>
     <section class="banner" role="banner" id="header">
         <div class="banner-content">
           <h2>Start Your Greatest </h2>
